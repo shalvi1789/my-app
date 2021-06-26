@@ -1,0 +1,14 @@
+<div class="row">
+    <div *ngFor="let pizza of pizzas" class="col-md-12">
+        <h3>{{pizza.name | uppercase}}</h3>
+        <ul >
+          <li>
+            {{pizza.base}}            
+          </li>
+          <li>
+            {{pizza.type}}
+          </li>
+        </ul>
+        <div class="col-md-3">Rs. {{pizza.rate}}</div>
+      </div>
+  </div>
